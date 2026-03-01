@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Activity.RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:gravity="center_horizontal"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+
+        android:textStyle="bold"
+        android:typeface="sans" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/tv_title"
+            android:visibility="visible"
+            android:background="@drawable/m79"/>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/et_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/card_view"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_textview"
+        android:drawableStart="@drawable/yong11"
+        android:drawablePadding="10dp"
+        android:hint="enter account "
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/DeepSkyBlue"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_account"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_textview"
+        android:drawableStart="@drawable/mi11"
+        android:drawablePadding="10dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/DeepSkyBlue"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_textview"
+        android:drawableStart="@drawable/mi11"
+        android:drawablePadding="10dp"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/DeepSkyBlue"
+        android:textSize="25sp" />
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:layout_below="@id/et_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:text="register"
+            android:textSize="25sp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:text="Cancel"
+            android:textSize="25sp"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+
+</RelativeLayout>

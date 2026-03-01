@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cinema ticket system</string>
+    <string name="login">User login</string>
+    <string name="register">User registration</string>
+    <string name="order_info">Order information</string>
+
+    <string name="order">Historical orders</string>
+    <string name="person">personal information</string>
+    <string name="share">Share software</string>
+</resources>

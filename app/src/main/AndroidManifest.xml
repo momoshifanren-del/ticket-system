@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="njust.dzh.dianying">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon2"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+        <activity android:name="njust.dzh.dianying.Activity.OrderActivity"
+            android:label="@string/order_info"></activity>
+        <activity
+            android:name="njust.dzh.dianying.Activity.MovieActivity"
+            android:theme="@style/FoodActivityTheme" />
+        <activity android:name="njust.dzh.dianying.Activity.LoginActivity" />
+        <activity android:name="njust.dzh.dianying.Activity.RegisterActivity" />
+        <activity android:name="njust.dzh.dianying.Activity.WelcomeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="njust.dzh.dianying.Activity.MainActivity">
+
+        </activity>
+
+        <activity android:name="njust.dzh.dianying.Activity.XingzuoActivity">
+
+        </activity>
+
+
+        <activity android:name="njust.dzh.dianying.Activity.XingPeiActivity">
+
+        </activity>
+
+
+        <activity android:name="njust.dzh.dianying.Activity.ShenFenActivity">
+
+        </activity>
+
+        <activity android:name="njust.dzh.dianying.Activity.ZizhuActivity">
+
+        </activity>
+
+    </application>
+
+</manifest>

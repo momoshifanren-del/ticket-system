@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextZodiac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your identity (e.g., student, teacher, mother, father, friend)." />
+
+    <Button
+        android:id="@+id/buttonQuery"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button"
+        android:text="Query"
+        android:textSize="25sp"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageViewFlower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mmm0" />
+</LinearLayout>

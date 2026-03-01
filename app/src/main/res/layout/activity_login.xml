@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    tools:context=".Activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:gravity="center_horizontal"
+        android:text="Cinema ticket system"
+        android:textColor="@color/Black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/tv_title"
+            android:visibility="visible"
+            android:background="@drawable/m79"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/et_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/card_view"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_textview"
+        android:drawableStart="@drawable/yong11"
+        android:drawablePadding="10dp"
+        android:hint="account"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/DeepSkyBlue"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_account"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_textview"
+        android:drawableStart="@drawable/mi11"
+        android:drawablePadding="10dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/DeepSkyBlue"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="New user registration"
+        android:textColor="@color/DarkBlue"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_register"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button"
+        android:text="Log in"
+        android:textSize="25sp"
+        android:typeface="monospace" />
+
+</RelativeLayout>
